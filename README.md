@@ -18,3 +18,11 @@ $ npm install @auth0/auth0-react
 ```
 
 ### 2. add initial files
+
+## Section 2. Components
+
+### 3. React Router - Setup
+
+### 4. Navbar
+
+### 2. add initial files
