@@ -71,13 +71,13 @@ $ npm install @auth0/auth0-react
 
 ### 24. Single Product - Product Images
 
-### 25. Single Product - Stars (manual approach)
+### 25. Single Product - Stars (array approach)
 
-### 26. Single Product - Stars (array approach)
+### 26. Single Product - Add To Cart - Colors
 
-### 27.
+### 27. Single Product - Add To Cart - Amount Buttons
 
-### 28.
+### 28. Single Product - Add To Cart - Amount Buttons
 
 ### 29.
 
