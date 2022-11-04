@@ -67,15 +67,15 @@ $ npm install @auth0/auth0-react
 
 ### 22. Fetch Single Product
 
-### 23. Single Product - Loading, Error
+### 23. Single Product - Loading, Error & Base Return
 
-### 24. Single Product - Base Return
+### 24. Single Product - Product Images
 
-### 25. Single Product - Product Images
+### 25. Single Product - Stars (manual approach)
 
-### 26. Single Product - Stars (manual approach)
+### 26. Single Product - Stars (array approach)
 
-### 27. Single Product - Stars (array approach)
+### 27.
 
 ### 28.
 
