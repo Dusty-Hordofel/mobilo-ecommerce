@@ -36,9 +36,24 @@ export const ProductsProvider = ({ children }) => {
   const closeSidebar = () => {
     dispatch({ type: SIDEBAR_CLOSE });
   };
+
+  const fetchProducts = async (url) => {
+    dispatch({ type: GET_PRODUCTS_BEGIN });
+    try {
+      const response = await axios.get(url);
+      const products = response.data;
+      console.log(
+        "🚀 ~ file: products_context.js ~ line 45 ~ fetchProducts ~ products",
+        products
+      );
+      dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products });
+    } catch (error) {
+      dispatch({ type: GET_PRODUCTS_ERROR });
+    }
+  };
+
   useEffect(() => {
-    openSidebar();
-    closeSidebar();
+    fetchProducts(url);
   }, []);
 
   return (
