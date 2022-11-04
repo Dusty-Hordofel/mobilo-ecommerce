@@ -77,7 +77,7 @@ $ npm install @auth0/auth0-react
 
 ### 27. Single Product - Add To Cart - Amount Buttons
 
-### 28. Single Product - Add To Cart - Amount Buttons
+### 28. Filter Context Setup
 
 ### 29.
 
