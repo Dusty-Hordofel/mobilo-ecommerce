@@ -27,11 +27,13 @@ $ npm install @auth0/auth0-react
 
 ### 5. Cart Buttons
 
-### 6.
+### 6. Footer
 
-### 7.
+### 7. Sidebar
 
-### 8.
+## Section 3. Context
+
+### 8. Products Context Setup
 
 ### 9.
 
