@@ -15,10 +15,32 @@ const products_reducer = (state, action) => {
     console.log("🚀 ~ file: products_reducer.js ~ line 15 ~ action", action);
     return { ...state, isSidebarOpen: true };
   }
+
   if (action.type === SIDEBAR_CLOSE) {
     console.log("🚀 ~ file: products_reducer.js ~ line 19 ~ action", action);
     return { ...state, isSidebarOpen: false };
   }
+
+  if (action.type === GET_PRODUCTS_BEGIN) {
+    return { ...state, products_loading: true };
+  }
+
+  if (action.type === GET_PRODUCTS_SUCCESS) {
+    const featured_products = action.payload.filter(
+      (product) => product.featured === true
+    ); //featured_products
+    return {
+      ...state,
+      products_loading: false,
+      products: action.payload,
+      featured_products,
+    }; //all products
+  }
+
+  if (action.type === GET_PRODUCTS_ERROR) {
+    return { ...state, products_loading: false, products_error: true };
+  }
+
   return state;
   throw new Error(`No Matching "${action.type}" - action type`);
 };
