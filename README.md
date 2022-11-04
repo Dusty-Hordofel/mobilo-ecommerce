@@ -39,22 +39,25 @@ $ npm install @auth0/auth0-react
 
 ### 10. Hot Reloading Fix
 
+## Section 4. Pages
+
 ### 11. Error Page
 
 ### 12. About, Checkout Page
 
-### 13. About, Checkout Page
+### 13. Home Page - Hero
 
-### 14. Home Page - Hero
+### 14. Home Page - Services
 
-### 15. Home Page - Services
+### 15. Home Page - Contact
 
-### 16. Home Page - Contact
+### 16. Formspree
 
-### 17. Formspree
+- formspree for form service
+-
 
-### 18. API Info
+### 17. API Info
 
-### 19. Fetch Products Overview
+### 18. Fetch Products Overview
 
-### 20. Fetch Products Complete
+### 19. Fetch Products Complete
