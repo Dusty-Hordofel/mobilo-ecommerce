@@ -11,11 +11,12 @@ import {
 
 //action is something we want to do and state is the current state.
 const products_reducer = (state, action) => {
-  console.log("🚀 ~ file: products_reducer.js ~ line 14 ~ action", action);
   if (action.type === "SIDEBAR_OPEN") {
+    console.log("🚀 ~ file: products_reducer.js ~ line 15 ~ action", action);
     return { ...state, isSidebarOpen: true };
   }
   if (action.type === SIDEBAR_CLOSE) {
+    console.log("🚀 ~ file: products_reducer.js ~ line 19 ~ action", action);
     return { ...state, isSidebarOpen: false };
   }
   return state;
