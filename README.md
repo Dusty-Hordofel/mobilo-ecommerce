@@ -54,10 +54,71 @@ $ npm install @auth0/auth0-react
 ### 16. Formspree
 
 - formspree for form service
--
 
 ### 17. API Info
 
 ### 18. Fetch Products Overview
 
 ### 19. Fetch Products Complete
+
+### 20. Featured Products
+
+### 21. Format Price
+
+### 22. Fetch Single Product
+
+### 23. Single Product - Loading, Error & Base Return
+
+### 24. Single Product - Product Images
+
+### 25. Single Product - Stars (array approach)
+
+### 26. Single Product - Add To Cart - Colors
+
+### 27. Single Product - Add To Cart - Amount Buttons
+
+### 28. Filter Context Setup
+
+### 29.
+
+### 30.
+
+### 31.
+
+### 32.
+
+### 33.
+
+### 34.
+
+### 35.
+
+### 36.
+
+### 37.
+
+### 38.
+
+### 39.
+
+### 40.
+
+### 41.
+
+### 42.
+
+### 43.
+
+### 44.
+
+### 45.
+
+### 46.
+
+### 47.
+
+### 48.
+
+### 49.
+
+### 50.
