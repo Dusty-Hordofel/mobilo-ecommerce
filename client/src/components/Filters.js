@@ -30,7 +30,7 @@ const Filters = () => {
     <Wrapper>
       <div className="content">
         <form onSubmit={(e) => e.preventDefault()}>
-          {/* search input */}
+          {/* search input section*/}
           <div className="form-control">
             <input
               type="text"
@@ -63,7 +63,7 @@ const Filters = () => {
               })}
             </div>
           </div>
-          {/* end of categories */}
+          {/* end of categories section*/}
           {/* companies */}
           <div className="form-control">
             <h5>company</h5>
