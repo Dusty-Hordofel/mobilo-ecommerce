@@ -5,6 +5,10 @@ import ListView from "./ListView";
 
 const ProductList = () => {
   const { filtered_products: products, grid_view } = useFilterContext();
+  console.log(
+    "🚀 ~ file: ProductList.js ~ line 8 ~ ProductList ~ products",
+    products
+  );
   if (products.length < 1) {
     return (
       <h5 style={{ textTransform: "none" }}>
