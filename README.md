@@ -57,6 +57,8 @@ $ npm install @auth0/auth0-react
 
 ### 17. API Info
 
+## Section 5. Products
+
 ### 18. Fetch Products Overview
 
 ### 19. Fetch Products Complete
@@ -91,25 +93,27 @@ $ npm install @auth0/auth0-react
 
 ### 34. Sort Functionality
 
-### 35. 
+## Section 6. Filters
 
-### 36.
+### 35. Filters - Default Values
 
-### 37.
+### 36. Filters - Text
 
-### 38.
+### 37. Filters - Unique Values
 
-### 39.
+### 38. Filters - Categories
 
-### 40.
+### 39. Filters - Companies
 
-### 41.
+### 40. Filters - Colors
 
-### 42.
+### 41. Filters - Price
 
-### 43.
+### 42. Filters - Shipping and Clear Filters
 
-### 44.
+### 43. Filter Functionality - Setup and Text Input
+
+### 44. Filter Functionality - Rest of the Filters
 
 ### 45.
 
