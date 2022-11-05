@@ -41,8 +41,8 @@ const Filters = () => {
               onChange={updateFilters}
             />
           </div>
-          {/* end search input */}
-          {/* categories */}
+          {/* end search input section*/}
+          {/* categories section */}
           <div className="form-control">
             <h5>category</h5>
             <div>
@@ -64,7 +64,7 @@ const Filters = () => {
             </div>
           </div>
           {/* end of categories section*/}
-          {/* companies */}
+          {/* companies section*/}
           <div className="form-control">
             <h5>company</h5>
             <select
@@ -82,9 +82,9 @@ const Filters = () => {
               })}
             </select>
           </div>
-          {/* end of companies */}
+          {/* end of companies section*/}
           {/* 
-          colors
+          colors section
           */}
           <div className="form-control">
             <h5>colors</h5>
@@ -123,7 +123,7 @@ const Filters = () => {
             </div>
           </div>
           {/* 
-end of           colors
+end of           colors section
           */}
           {/* price */}
           <div className="form-control">
