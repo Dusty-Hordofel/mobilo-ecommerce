@@ -15,7 +15,7 @@ import { useProductsContext } from "./products_context";
 const initialState = {
   filtered_products: [],
   all_products: [],
-  grid_view: false,
+  grid_view: true,
   sort: "price-lowest",
   filters: {
     text: "",
@@ -35,27 +35,39 @@ export const FilterProvider = ({ children }) => {
   const { products } = useProductsContext();
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  useEffect(() => {
-    dispatch({ type: LOAD_PRODUCTS, payload: products });
-  }, [products]);
-
+  //to filter and sort products when all depencies  changes
   useEffect(() => {
     dispatch({ type: FILTER_PRODUCTS });
     dispatch({ type: SORT_PRODUCTS });
   }, [products, state.sort, state.filters]);
 
+  //dispatch LOAD_PRODUCTS when useEffect runs
+  useEffect(() => {
+    dispatch({ type: LOAD_PRODUCTS, payload: products });
+  }, [products]);
+
+  //set different view states
   const setGridView = () => {
     dispatch({ type: SET_GRIDVIEW });
   };
   const setListView = () => {
     dispatch({ type: SET_LISTVIEW });
   };
+
+  //function we run everytime we sort products
   const updateSort = (e) => {
     // for demonstration
-    // const name = e.target.name
+    // const name = e.target.name;
     const value = e.target.value;
+    console.log(
+      "🚀 ~ file: filter_context.js ~ line 59 ~ updateSort ~ value",
+      // name,
+      value
+    );
     dispatch({ type: UPDATE_SORT, payload: value });
   };
+
+  //to update our filters
   const updateFilters = (e) => {
     let name = e.target.name;
     let value = e.target.value;

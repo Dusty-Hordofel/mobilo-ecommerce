@@ -79,19 +79,19 @@ $ npm install @auth0/auth0-react
 
 ### 28. Filter Context Setup
 
-### 29.
+### 29. Products Page - Grid View
 
-### 30.
+### 30. Products Page - List View
 
-### 31.
+### 31. Sort Component - Basic Setup
 
-### 32.
+### 32. Sort Component - View Buttons
 
-### 33.
+### 33. Sort Component - Controlled Input
 
-### 34.
+### 34. Sort Functionality
 
-### 35.
+### 35. 
 
 ### 36.
 
