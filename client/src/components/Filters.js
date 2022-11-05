@@ -21,6 +21,7 @@ const Filters = () => {
     all_products,
   } = useFilterContext();
 
+  //Filters: get Unique values
   const categories = getUniqueValues(all_products, "category");
   const companies = getUniqueValues(all_products, "company");
   const colors = getUniqueValues(all_products, "colors");
