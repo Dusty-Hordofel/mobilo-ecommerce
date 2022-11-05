@@ -50,12 +50,21 @@ export const FilterProvider = ({ children }) => {
   const setListView = () => {
     dispatch({ type: SET_LISTVIEW });
   };
+
+  //function we run everytime we sort products
   const updateSort = (e) => {
     // for demonstration
-    // const name = e.target.name
+    // const name = e.target.name;
     const value = e.target.value;
+    console.log(
+      "🚀 ~ file: filter_context.js ~ line 59 ~ updateSort ~ value",
+      // name,
+      value
+    );
     dispatch({ type: UPDATE_SORT, payload: value });
   };
+
+  //to update our filters
   const updateFilters = (e) => {
     let name = e.target.name;
     let value = e.target.value;
