@@ -35,16 +35,16 @@ export const FilterProvider = ({ children }) => {
   const { products } = useProductsContext();
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  //dispatch LOAD_PRODUCTS when useEffect runs
+  useEffect(() => {
+    dispatch({ type: LOAD_PRODUCTS, payload: products });
+  }, [products]);
+
   //to filter and sort products when all depencies  changes
   useEffect(() => {
     dispatch({ type: FILTER_PRODUCTS }); //filter products,run useEffect every time state.filters changes
     dispatch({ type: SORT_PRODUCTS });
   }, [products, state.sort, state.filters]);
-
-  //dispatch LOAD_PRODUCTS when useEffect runs
-  useEffect(() => {
-    dispatch({ type: LOAD_PRODUCTS, payload: products });
-  }, [products]);
 
   //set different view states
   const setGridView = () => {
@@ -57,7 +57,7 @@ export const FilterProvider = ({ children }) => {
   //function we run everytime we sort products
   const updateSort = (e) => {
     // for demonstration
-    // const name = e.target.name;
+    // const name = e.target.name
     const value = e.target.value;
     console.log(
       "🚀 ~ file: filter_context.js ~ line 59 ~ updateSort ~ value",

@@ -111,18 +111,76 @@ $ npm install @auth0/auth0-react
 
 ### 42. Filters - Shipping and Clear Filters
 
-### 43. Filter Functionality - Setup and Text Input
+### 43. Filter Functionality
 
-### 44. Filter Functionality - Rest of the Filters
+## Section 7. Cart
 
-### 45.
+### 44. Cart Context Setup
 
-### 46.
+### 45. AddToCart - Setup
 
-### 47.
+### 46. AddToCart Reducer - New Item
 
-### 48.
+### 47. AddToCart Reducer - Existing Item
 
-### 49.
+### 48. Cart Page Setup
 
-### 50.
+### 49. localStorage
+
+### 50. Cart Content
+
+### 51. Cart Columns
+
+### 52. Cart Totals
+
+### 53. Cart Item
+
+### 54. Cart - Remove Item and Clear Cart
+
+### 55. Toggle Amount
+
+### 56. Cart - Calculate Totals
+
+## Section 8. Auth0
+
+### 57. Auth0 - Setup
+
+### 58. Auth0 - Provider
+
+### 59. useContext Setup
+
+### 60. Auth0 - Login/Logout Buttons
+
+### 61. Auth0 - Toggle Values
+
+### 62. Auth0 - Hide Checkout
+
+### 63. Auth0 - Private Route
+
+### 64. AuthWrapper
+
+### 65. Fix Warnings
+
+## Section 9. Stripe API
+
+### 66. Stripe and Netlify Accounts
+
+### 67. Install and Setup netlify-cli
+
+### 68. First Netlify Function
+
+### 69. Stripe Checkout - Setup
+
+### 70. Stripe Checkout - Imports
+
+### 71. Stripe Checkout - State Variables
+
+### 72. Stripe Checkout - Basic Return
+
+### 73. Netlify Function - /create-payment-setup
+
+### 74. Stripe Checkout - Get Client Secret
+
+### 75. Stripe Checkout - Complete
+
+### 76. Deploy To Netlify
