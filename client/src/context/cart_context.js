@@ -41,7 +41,13 @@ export const CartProvider = ({ children }) => {
 
   // toggle amount
   const toggleAmount = (id, value) => {
-    console.log(id, value);
+    console.log(
+      "🚀 ~ file: cart_context.js ~ line 44 ~ toggleAmount ~ id & value",
+      id,
+      value
+    );
+    // console.log(id, value);
+    dispatch({ type: TOGGLE_CART_ITEM_AMOUNT, payload: { id, value } });
   };
 
   // clear cart
@@ -54,7 +60,9 @@ export const CartProvider = ({ children }) => {
   }, [state.cart]);
 
   return (
-    <CartContext.Provider value={{ ...state, addToCart }}>
+    <CartContext.Provider
+      value={{ ...state, addToCart, removeItem, toggleAmount, clearCart }}
+    >
       {children}
     </CartContext.Provider>
   );
