@@ -37,7 +37,7 @@ export const FilterProvider = ({ children }) => {
 
   //to filter and sort products when all depencies  changes
   useEffect(() => {
-    dispatch({ type: FILTER_PRODUCTS });
+    dispatch({ type: FILTER_PRODUCTS }); //filter products,run useEffect every time state.filters changes
     dispatch({ type: SORT_PRODUCTS });
   }, [products, state.sort, state.filters]);
 
@@ -71,20 +71,27 @@ export const FilterProvider = ({ children }) => {
   const updateFilters = (e) => {
     let name = e.target.name;
     let value = e.target.value;
+
     if (name === "category") {
       value = e.target.textContent;
     }
+
     if (name === "color") {
       value = e.target.dataset.color;
     }
+
     if (name === "price") {
       value = Number(value);
     }
+
     if (name === "shipping") {
       value = e.target.checked;
     }
+
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });
   };
+
+  //clear Filters
   const clearFilters = () => {
     dispatch({ type: CLEAR_FILTERS });
   };

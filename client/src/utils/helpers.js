@@ -8,7 +8,7 @@ export const formatPrice = (number) => {
 export const getUniqueValues = (data, type) => {
   let unique = data.map((item) => item[type]);
   if (type === "colors") {
-    unique = unique.flat();
+    unique = unique.flat(); //The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
   }
-  return ["all", ...new Set(unique)];
+  return ["all", ...new Set(unique)]; //Set is used to get unique values
 };
