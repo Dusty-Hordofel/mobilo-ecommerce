@@ -167,6 +167,9 @@ $ npm install @auth0/auth0-react
 
 ### 67. Install and Setup netlify-cli
 
+$ npm i -g netlify-cli
+$ netlify dev or ntl dev
+
 ### 68. First Netlify Function
 
 ### 69. Stripe Checkout - Setup
