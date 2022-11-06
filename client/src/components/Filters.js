@@ -42,6 +42,7 @@ const Filters = () => {
             />
           </div>
           {/* end search input section*/}
+
           {/* categories section */}
           <div className="form-control">
             <h5>category</h5>
@@ -64,6 +65,7 @@ const Filters = () => {
             </div>
           </div>
           {/* end of categories section*/}
+
           {/* companies section*/}
           <div className="form-control">
             <h5>company</h5>
@@ -83,6 +85,7 @@ const Filters = () => {
             </select>
           </div>
           {/* end of companies section*/}
+
           {/* 
           colors section
           */}
@@ -125,7 +128,8 @@ const Filters = () => {
           {/* 
 end of           colors section
           */}
-          {/* price */}
+
+          {/* price section*/}
           <div className="form-control">
             <h5>price</h5>
             <p className="price">{formatPrice(price)}</p>
@@ -138,8 +142,9 @@ end of           colors section
               value={price}
             />
           </div>
-          {/* end of price */}
-          {/* shippping */}
+          {/* end of price price*/}
+
+          {/* shippping section*/}
           <div className="form-control shipping">
             <label htmlFor="shipping"> free shipping</label>
             <input
@@ -150,7 +155,7 @@ end of           colors section
               checked={shipping}
             />
           </div>
-          {/* end of  shippping */}
+          {/* end of  shippping section*/}
         </form>
         <button type="button" className="clear-btn" onClick={clearFilters}>
           {" "}
