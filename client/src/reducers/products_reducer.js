@@ -12,12 +12,10 @@ import {
 //action is something we want to do and state is the current state.
 const products_reducer = (state, action) => {
   if (action.type === SIDEBAR_OPEN) {
-    console.log("🚀 ~ file: products_reducer.js ~ line 15 ~ action", action);
     return { ...state, isSidebarOpen: true };
   }
 
   if (action.type === SIDEBAR_CLOSE) {
-    console.log("🚀 ~ file: products_reducer.js ~ line 19 ~ action", action);
     return { ...state, isSidebarOpen: false };
   }
 
@@ -48,6 +46,7 @@ const products_reducer = (state, action) => {
       single_product_error: false,
     };
   }
+
   if (action.type === GET_SINGLE_PRODUCT_SUCCESS) {
     return {
       ...state,
@@ -55,6 +54,7 @@ const products_reducer = (state, action) => {
       single_product: action.payload,
     };
   }
+
   if (action.type === GET_SINGLE_PRODUCT_ERROR) {
     return {
       ...state,
@@ -62,7 +62,6 @@ const products_reducer = (state, action) => {
       single_product_error: true,
     };
   }
-
   // return state;
   throw new Error(`No Matching "${action.type}" - action type`);
 };
